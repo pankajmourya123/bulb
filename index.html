@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <div class="images">
+      <button id="on" >on light</button>
+     <img src="pic_bulboff.gif" alt=""
+      style="width:300px" id="myImage">
+      <button id="off">off light</button>
+    </div>
+</body>
+<script>
+    let elm=document.getElementById("myImage")
+    let on=document.getElementById("on")
+    let off=document.getElementById("off")
+    on.addEventListener('click',onlight)
+    off.addEventListener('click',oflight)
+    function onlight(){
+        elm.src='pic_bulbon.gif'
+    }
+    function oflight(){
+        elm.src='pic_bulboff.gif'
+    }
+    
+</script>
+</html>
